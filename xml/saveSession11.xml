@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://sbapp.hescloud.net/session/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Body>
+    <ns1:saveSession11>
+      <client_guid xsi:type="xsd:string">$apiKey</client_guid>
+      <session_id xsi:type="xsd:int">$sessionId</session_id>
+      <input_object xsi:type="ns1:SaveSessionInput">
+        <extraInputs xsi:type="ns1:SaveSessionExtraInputs">
+          <controller xsi:type="xsd:string">consumer</controller>
+          <action xsi:type="xsd:string">save-and-go</action>
+          <module xsi:type="xsd:string">default</module>
+          <nextPage xsi:type="xsd:string"/>
+          <nextTask xsi:type="xsd:string">next</nextTask>
+          <finished_detailed xsi:type="xsd:string"/>
+          <formGroup xsi:type="xsd:string">Quick</formGroup>
+          <formForm xsi:type="xsd:string">General</formForm>
+        </extraInputs>
+        <saveInputs SOAP-ENC:arrayType="ns1:SaveSessionSaveInputs[5]" xsi:type="ns1:ArrayOfSaveSessionSaveInputs">
+          <item xsi:type="ns1:SaveSessionSaveInputs">
+            <inputTableName xsi:type="xsd:string">whole_house_input</inputTableName>
+            <inputColumnName xsi:type="xsd:string">sessionType</inputColumnName>
+            <s_value xsi:type="xsd:string">0</s_value>
+          </item>
+          <item xsi:type="ns1:SaveSessionSaveInputs">
+            <inputTableName xsi:type="xsd:string">whole_house_input</inputTableName>
+            <inputColumnName xsi:type="xsd:string">floorArea</inputColumnName>
+            <s_value xsi:type="xsd:string">$area</s_value>
+          </item>
+          <item xsi:type="ns1:SaveSessionSaveInputs">
+            <inputTableName xsi:type="xsd:string">whole_house_input</inputTableName>
+            <inputColumnName xsi:type="xsd:string">purpose</inputColumnName>
+            <s_value xsi:type="xsd:string">0</s_value>
+          </item>
+          <item xsi:type="ns1:SaveSessionSaveInputs">
+            <inputTableName xsi:type="xsd:string">whole_house_input</inputTableName>
+            <inputColumnName xsi:type="xsd:string">year</inputColumnName>
+            <s_value xsi:type="xsd:string">$year</s_value>
+          </item>
+        </saveInputs>
+        <lightInputs SOAP-ENC:arrayType="ns1:SaveSessionLightInputs[0]" xsi:type="ns1:ArrayOfSaveSessionLightInputs"/>
+      </input_object>
+      <validate xsi:type="xsd:int">1</validate>
+    </ns1:saveSession11>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

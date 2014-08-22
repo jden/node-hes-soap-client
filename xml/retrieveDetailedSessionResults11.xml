@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://sbapp.hescloud.net/session/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Body>
+    <ns1:retrieveDetailedSessionResults11>
+      <client_guid xsi:type="xsd:string">$apiKey</client_guid>
+      <session_id xsi:type="xsd:int">$sessionId</session_id>
+    </ns1:retrieveDetailedSessionResults11>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

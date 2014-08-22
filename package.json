@@ -3,7 +3,12 @@
   "author": "jden <jason@denizac.org>",
   "version": "0.1.0",
   "description": "client for the home energy survey api",
-  "keywords": ["soap", "electricity", "energy", "api"],
+  "keywords": [
+    "soap",
+    "electricity",
+    "energy",
+    "api"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -13,5 +18,8 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "mochi": "0.1.0"
+  },
+  "dependencies": {
+    "pr-request": "^2.36.0"
   }
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://proapp.hescloud.net/session/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Body>
+    <ns1:newSession>
+      <client_guid xsi:type="xsd:string">$apiKey</client_guid>
+      <zipcode xsi:type="xsd:string">$zipCode</zipcode>
+      <website_type xsi:type="xsd:int">0</website_type>
+    </ns1:newSession>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
